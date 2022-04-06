@@ -1,0 +1,18 @@
+.fundoTela{
+    background-color: #F0FFFF;
+}
+
+.cabechalho{
+    background-image: url(/HTML_CSS/Aula02/img/Genshin-Impact.jpg);
+    background-size: auto;
+}
+
+h1{
+    font-family: cursive;
+    font-size: 4em;
+    color: #4682B4;
+}
+
+.centro{
+    text-align: center;
+}

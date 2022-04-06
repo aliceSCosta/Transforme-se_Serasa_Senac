@@ -1,0 +1,23 @@
+p{
+    font-size: 30px;
+    color: #2F4F4F;
+}
+
+button{
+    color: #2F4F4F; 
+    font-size: large; 
+    margin: 30px; 
+    padding: 25px;
+}
+
+.botaoVermelho{
+    background-color: #FA8072; 
+}
+
+.botaoAzul{
+    background-color: #5F9EA0;
+}
+
+.centro{
+    text-align: center;
+}
