@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=El+Messiri&display=swap');
+
+body{
+    font-family: 'El Messiri', sans-serif;
+    color: #454545;
+    background:#F0F0F0;
+}
+
+.box{
+    margin: 0 auto;
+    background: #FFFFFF;
+    padding: 30px;
+    width: 295px;
+    text-align: center; 
+    border-radius: 6px;
+    box-shadow: 3px 2px 3px #CCC;
+}
+
+input{
+    padding: 7.5px;
+    width: 220px;
+    margin: 5px;
+    border: 1px solid #cac6c6;
+    border-radius: 4px;
+}
+
+.botaoEntrar{
+    padding: 5px;
+    background: rgb(134, 194, 209);
+    color: rgb(9, 97, 104);
+    box-shadow: 0px 0px 3px rgb(82, 151, 168);
+    border-radius: 4px;
+    border: none;
+    margin: 20px;
+    width: 100px;
+}
+
+.botaoCadastrar{
+    padding: 5px;
+    background: rgba(70, 197, 144, 0.822);
+    color: rgb(11, 102, 67);
+    box-shadow: 0px 0px 3px rgb(82, 168, 111);
+    border-radius: 4px;
+    border: none;
+    margin: 20px;
+    width: 100px;
+}
+
+.botaoCancelar{
+    padding: 5px;
+    background: rgba(197, 70, 98, 0.822);
+    color: rgb(139, 13, 34);
+    box-shadow: 0px 0px 3px rgb(168, 82, 96);
+    border-radius: 4px;
+    border: none;
+    margin: 20px;
+    width: 100px;
+}

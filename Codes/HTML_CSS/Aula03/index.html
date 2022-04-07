@@ -5,27 +5,72 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/HTML_CSS/Aula03/style.css"/>
+    <link rel="stylesheet" href="assets/style.css"/>
+    <link rel="stylesheet" href="assets/icones/css/all.css"/>
 </head>
 <body>
-    <div class="container">
+
+    <!--Tela de login-->
+    <div class="container" id="telaLogin">
         <div class="box">
             <h1>Seja bem-vido</h1>
             <p>Faça login para começar</p>
 
             <form action="produtos.html">
                 <label for="">
-                    <input type="text" placeholder="Digite seu usuário..."/>
+                    <i class="fa-solid fa-user-graduate"></i>
+                    <input id="inputUsuario" required type="text" placeholder="Digite seu usuário..."/>
                 </label>
                 <label for="">
                     <br>
-                    <input type="password" placeholder="Digite sua senha...">
+                    <i class="fa-solid fa-lock"></i>
+                    <input id="inputSenha" required type="password" placeholder="Digite sua senha...">
                 </label>
                 <br>
-                <input class="botaoEntrar" type="submit" value="Entrar"/>
                 
             </form>
+            
+            <button onclick="login()" class="botaoEntrar">Entrar <i class="fa-solid fa-arrow-right-to-bracket"></i></button>
+            <button onclick="mostraCadastro()()" class="botaoEntrar">Cadastrar <i class="fa-solid fa-user-plus"></i></button>
+
         </div>
     </div>
+
+    <!--Tela de cadastro-->
+    <div class="container" style="display: none;" id="telaCadastro">
+        <div class="box">
+            <h1>Cadastro de Usuário</h1>
+
+            <form action="produtos.html">
+                <label for="">
+                    <i class="fa-solid fa-at"></i>
+                    <input id="inputEmailCadastro" required type="email" placeholder="Digite um email...">
+                </label>
+                <label for="">
+                    <br>
+                    <i class="fa-solid fa-user-graduate"></i>
+                    <input id="inputUsuarioCadastro" required type="text" placeholder="Informe um usuário..."/>
+                </label>
+                <label for="">
+                    <br>
+                    <i class="fa-solid fa-lock"></i>
+                    <input id="inputSenhaCadastro" required type="password" placeholder="Digite sua senha...">
+                </label>
+                <label for="">
+                    <br>
+                    <i class="fa-solid fa-lock"></i>
+                    <input required type="password" id="inputConfirmSenhaCadastro" placeholder="Confirme sua senha...">
+                </label>
+                <br>
+                
+            </form>
+            
+            <button onclick="clicouBotaoCadastrar()" class="botaoCadastrar">Cadastrar <i class="fa-solid fa-check"></i></button>
+            <button onclick="mostraLogin()" class="botaoCancelar">Cancelar <i class="fa-solid fa-xmark"></i></button>
+
+        </div>
+    </div>
+
+    <script src="assets/script.js"></script>
 </body>
 </html>
