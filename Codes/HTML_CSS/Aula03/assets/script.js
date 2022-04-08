@@ -31,7 +31,25 @@ function login(){
 
 function cadastrarUsuario(){
 
-    var email = document.getElementById()
-    usuarioCadastrado = document.getElementById("inputUsuarioCadastro").value
+    var emailDigitado = document.getElementById("inputEmailCadastro").value
+    var usuarioDigitado = document.getElementById("inputUsuarioCadastro").value
+    var senhaDigitada = document.getElementById("inputSenhaCadastro").value
+    var confirmaSenha = document.getElementById("inputConfirmSenhaCadastro").value
+
+    if (emailDigitado || usuarioDigitado || senhaDigitada ){
+        alert("Digite corretamente seu usuário e senha")
+        return
+    }
+    if (senhaDigitada != confirmaSenha){
+        alert("As senhas não coincidem")
+        return;
+    }
+
+    alert("Usuário cadastrado com sucesso")
+
+    usuarioCadastrado = usuarioDigitado
+    senhaCadastrada = senhaDigitada
+
+    mostraLogin()
 
 }
